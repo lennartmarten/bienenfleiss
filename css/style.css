@@ -1,0 +1,137 @@
+:root {
+    --primary: #FFBC00 !important;
+    --secondary: #C6C6C6 !important;
+    --dark: #1D1D1D !important;
+    --white: #FFF !important;
+    --info: #630083 !important;
+}
+
+body {
+    color: var(--dark);
+    font-family: Avenir, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Buttons */
+
+button {
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    color: var(--primary)
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    font-family: 'Avenir', sans-serif !important;
+}
+
+
+/* Navigation */
+
+.nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding-right: 2rem;
+}
+
+nav-link,
+a {
+    display: block;
+    padding: .5rem 1rem;
+    color: var(--dark) !important;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--primary) !important;
+}
+
+.nav-link a.active {
+    border-bottom: 3px solid var(--primary) !important;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    background-color: var(--primary);
+    height: auto;
+}
+
+col-left {
+    background: var(--primary);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--primary);
+    background-image: url(./images/hero-img.jpg);
+    width: 40%;
+    height: 600px;
+}
+
+
+/* Gutschein-Cards */
+
+.coupon-wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #EFEFEF;
+    border: none;
+    box-shadow: 0px 24px 30px #6D8DAD;
+    padding: 1rem;
+    border-radius: 25px;
+    max-width: 400px;
+}
+
+.card-img {
+    height: 100%;
+    max-width: 400px;
+    background: wheat;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    justify-content: center;
+}
+
+img {
+    border-radius: 25px;
+    max-width: 400px;
+}
+
+@media (max-width: 991.98px) {
+    .coupon-wrapper {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+}
