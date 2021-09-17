@@ -5,7 +5,7 @@
     --secondary: #C6C6C6;
     --dark: #1D1D1D;
     --white: #FFF;
-    --info: #630083;
+    --info: #A977B9;
     --fw-light: Avenir-light, sans-serif;
     --fw-medium: Avenir-medium, sans-serif;
     --fw-bold: Avenir-black, sans-serif;
@@ -16,6 +16,11 @@ body {
     font-family: var(--fw-light);
     font-weight: lighter;
     overflow-x: hidden;
+}
+
+a,
+button {
+    cursor: pointer;
 }
 
 
@@ -34,6 +39,11 @@ h2.card-headline {
     padding-bottom: 1rem;
 }
 
+h4.card-subline {
+    font-size: 1rem;
+    font-family: var(--fw-bold);
+}
+
 h4 {
     font-family: var(--fw-medium);
 }
@@ -46,12 +56,34 @@ button {
     border-radius: 25px;
     color: var(--primary);
     padding: 15px 59px;
+    background-color: none !important;
+}
+
+.btn-bestellen,
+.btn-hero {
+    transition-duration: 0.4s;
+}
+
+.btn-bestellen:hover {
+    background-color: var(--primary) !important;
+    color: var(--white);
 }
 
 .btn-bestellen {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.btn-hero {
+    display: flex;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+}
+
+.btn-hero:hover {
+    background-color: var(--dark) !important;
+    color: var(--white);
 }
 
 
@@ -75,7 +107,7 @@ ul {
 
 li {
     list-style: none;
-    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 nav-link,
@@ -154,14 +186,38 @@ a {
     max-width: 400px;
 }
 
-.card-content {
+.card-header {
+    display: flex;
+    margin-top: 1rem;
     padding: 1rem;
-    margin-top: 1.8rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding: 0 1rem 0;
+    height: 100%;
+}
+
+.card-headline,
+h2 {
+    margin-bottom: 1.3rem;
 }
 
 .list-rows {
     display: flex;
     flex-direction: row;
+    margin-top: 1.3em;
+    min-height: 270px;
+}
+
+ol {
+    margin-top: 2rem;
 }
 
 .list-right {
@@ -170,11 +226,35 @@ a {
 
 .list-left {
     text-align: left;
+    padding-bottom: 2rem;
+    height: 15px;
 }
 
 .info-sub {
     display: flex;
     justify-content: center;
+    margin-top: 1.3rem;
+    color: var(--info);
+    font-family: var(--fw-medium);
+    font-size: 0.8;
+}
+
+span.side-info {
+    font-family: var(--fw-light);
+    color: var(--info);
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.9rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 991.98px) {
