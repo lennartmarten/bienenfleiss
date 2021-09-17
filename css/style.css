@@ -56,7 +56,7 @@ button {
     border-radius: 25px;
     color: var(--primary);
     padding: 15px 59px;
-    background-color: none !important;
+    background-color: transparent;
 }
 
 .btn-bestellen,
@@ -65,7 +65,7 @@ button {
 }
 
 .btn-bestellen:hover {
-    background-color: var(--primary) !important;
+    background-color: var(--primary);
     color: var(--white);
 }
 
@@ -82,18 +82,23 @@ button {
 }
 
 .btn-hero:hover {
-    background-color: var(--dark) !important;
+    background-color: var(--dark);
     color: var(--white);
 }
 
 
 /* Navigation */
 
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    min-height: 94px;
     background-color: var(--white);
 }
 
@@ -102,7 +107,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-decoration: none;
 }
 
 li {
@@ -110,10 +114,17 @@ li {
     padding-bottom: 2rem;
 }
 
-nav-link,
-a {
-    display: block;
-    padding: .5rem 1rem;
+.nav-controller {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
     color: var(--dark);
     text-decoration: none;
 }
@@ -124,6 +135,14 @@ a {
 
 .nav-link a.active {
     border-bottom: 3px solid var(--primary);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
 }
 
 
@@ -212,7 +231,6 @@ h2 {
 .list-rows {
     display: flex;
     flex-direction: row;
-    margin-top: 1.3em;
     min-height: 270px;
 }
 
@@ -272,7 +290,10 @@ span.side-info {
     display: flex;
     background: var(--dark);
     color: var(--white);
+    min-height: 240px;
+    width: 100%;
     margin-top: 5rem;
+    padding: 0 250px 0;
 }
 
 .footer-link {
