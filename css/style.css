@@ -131,10 +131,14 @@ li {
 
 .nav-link:hover {
     border-bottom: 3px solid var(--primary);
+    margin: auto;
+    font-size: var(--fw-bold);
 }
 
 .nav-link a.active {
     border-bottom: 3px solid var(--primary);
+    margin: auto;
+    font-size: var(--fw-bold);
 }
 
 .logo-container {
