@@ -37,15 +37,13 @@
     <!-- Navigation-->
     <section class="navigation">
         <div class="nav-controller">
-            <div class="logo-container">
-                <img src="./images/logo_bienenfleiss.svg" alt="">
-            </div>
+
             <div class="nav-header">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Honig</a>
-                <a class="nav-link" href="#">Produkte</a>
-                <a class="nav-link" href="#">Geschenkgutschein</a>
-                <a class="nav-link" href="#">Über Uns</a>
+                <a class="nav-link" href="#" title="Home">Home</a>
+                <a class="nav-link" href="#" title="Honig">Honig</a>
+                <a class="nav-link" href="#" title="Unsere Produkte">Unsere Produkte</a>
+                <a class="nav-link" href="#" title="Geschenkgutschein">Geschenkgutschein</a>
+                <a class="nav-link" href="#" title="Ueber uns">Über Uns</a>
             </div>
         </div>
 
@@ -54,16 +52,37 @@
     <!-- Header -->
 
     <section class="header">
-        <div class="col-left">
-            <h1 class="h1">Geschenkgutscheine</h1>
-            <p>
-                <lead class="">Machen Sie Ihren Freunden eine Freude:</lead><br><br/> Mit einem unserer Geschenkgutscheine. Wählen Sie, ob es ein süßes Präsent aus Honig sein soll, ob Sie einen Bienenbesuch oder gleich einen Imkerkurs verschenken wollen.<br><br/> Es
-                geht ganz einfach: Sie drücken auf den entsprechenden Bestell-Button, dann gelangen Sie zu der Bezahlseite mit allen wichtigen Daten. Und wir stellen Ihnen einen wertvoll gestalteten Gutschein aus, den Sie per Post erhalten.
-            </p>
+
+        <div class="logo-container">
+            <img class="logo-img" src="./images/logo_bienenfleiss.svg" alt="">
+        </div>
+
+        <div class="img-hero">
+            <img class="round-img" src="./images/img-hero.png" alt="">
+        </div>
+
+        <div class="hero-btn">
             <button class="btn-hero" href="#">Zu den Gutscheinen</button>
         </div>
-        <div class="col-right">
-            <img class="hero-img" src="/images/hero-img.jpg" alt="">
+
+    </section>
+
+    <!-- Einleitung -->
+
+    <section class="article">
+        <h2 class="article-headline">Machen Sie Ihren Freunden eine Freude</h2>
+        <div class="article-container">
+            <div class="col-text-l">
+                <p>Mit einem unserer Geschenkgutscheine. Wählen Sie, ob es ein süßes <a class="link-text" href="#">Präsent aus Honig</a> sein soll, ob Sie einen <a class="link-text" href="#">Bienenbesuch</a> oder gleich einen <a class="link-text" href="#">Imkerkurs</a>verschenken
+                    wollen.
+                </p>
+            </div>
+            <div class="col-img">
+                <img class="article-img" src="./images/article-img.png" alt="">
+            </div>
+            <div class="col-text-r">
+                <p>Es geht ganz einfach: Sie drücken auf den entsprechenden Bestell-Button, dann gelangen Sie zu der Bezahlseite mit allen wichtigen Daten. Und wir stellen Ihnen einen wertvoll gestalteten Gutschein aus, den Sie per Post erhalten.</p>
+            </div>
         </div>
     </section>
 
@@ -81,17 +100,11 @@
             </div>
             <div class="card-content">
                 <div class="list-rows">
-                    <ol class="list-left">
-                        <li>Frühtrachthonig</li>
-                        <li>Ahornhonig</li>
-                        <li>Sommertrachthonig</li>
-                        <li>Edelkastanienhonig</li>
-                    </ol>
                     <ol class="list-right">
-                        <li>(aus Blüten von Raps, Löwenzahn, Apfel und Kirsche)</li>
-                        <li></li>
-                        <li>(aus Blüten von Linde und Robinie)</li>
-                        <li></li>
+                        <li>Frühtrachthonig (aus Blüten von Raps, Löwenzahn, Apfel und Kirsche)</li>
+                        <li>Ahornhonig</li>
+                        <li>Sommertrachthonig (aus Blüten von Linde und Robinie)</li>
+                        <li>Edelkastanienhonig</li>
                     </ol>
                 </div>
             </div>
@@ -113,7 +126,7 @@
             </div>
             <div class="card-content">
                 <div class="list-rows">
-                    <ol class="list-left">
+                    <ol class="list-right">
                         <li>Wissenswertes aus dem Alltag der Imkerei</li>
                         <li>Blick in den Bienenstock</li>
                         <li>Neues vom Wert des Honigs</li>
@@ -139,15 +152,6 @@
             </div>
             <div class="card-content">
                 <div class="list-rows">
-                    <ol class="list-left">
-                        <li>20. April 2019</li>
-                        <li>08. Mai 2019</li>
-                        <li>10. August 2019</li>
-                        <li>31. August 2019</li>
-                        <li>07. Dezember 2019</li>
-                        <li>14. März 2020</li>
-                        <li>16. Mai 2020</li>
-                    </ol>
                     <ol class="list-right">
                         <li>Theoretische Grundlagen</li>
                         <li>Erste Arbeit mit dem Schwarm</li>
@@ -156,6 +160,15 @@
                         <li>Bienen im Winter</li>
                         <li>Auswinterung</li>
                         <li>Schwarmkontrolle</li>
+                    </ol>
+                    <ol class="list-left">
+                        <li>20. April 2019</li>
+                        <li>08. Mai 2019</li>
+                        <li>10. August 2019</li>
+                        <li>31. August 2019</li>
+                        <li>07. Dezember 2019</li>
+                        <li>14. März 2020</li>
+                        <li>16. Mai 2020</li>
                     </ol>
                 </div>
             </div>
@@ -171,17 +184,27 @@
     <!-- Footer -->
 
     <section class="footer">
-        <div class="nav-footer">
-            <ul>
-                <li>
-                    <a class="footer-link" href="#">Kontakt</a>
-                </li>
-                <li>
-                    <a class="footer-link" href="#">Impressum</a>
-                </li>
-                </li>
-            </ul>
+
+        <ul class="nav-footer">
+            <li>
+                <a class="footer-link" href="#">Kontakt</a>
+            </li>
+            <li>
+                <a class="footer-link" href="#">Impressum</a>
+            </li>
+            <li>
+                <a class="footer-link" href="#">Cookie-Einstellungen überarbeiten</a>
+            </li>
+        </ul>
+        <div class="logo-footer">
+            <img src="./images/logo_bienenfleiss.svg" alt="">
         </div>
+        <ul class="contact">
+            <li>Imkerei Bienenfleiß</li>
+            <li>Torsten Hoover</li>
+            <li>Höhenweg 72</li>
+            <li>653789 Gorno</li>
+        </ul>
     </section>
 
 
