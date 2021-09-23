@@ -236,6 +236,9 @@ li {
     padding: 0 1rem 0;
     margin-top: 5rem;
     padding-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
 }
 
 h2.article-headline {
@@ -299,6 +302,9 @@ a.link-text {
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     margin: 2rem 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
 }
 
 .card {
@@ -418,7 +424,6 @@ span.side-info {
     color: var(--white);
     box-sizing: border-box;
     margin-top: 5rem;
-    width: 100%;
 }
 
 .nav-footer {
