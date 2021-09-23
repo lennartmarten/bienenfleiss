@@ -162,13 +162,13 @@ li {
     padding: .5rem;
     color: var(--white);
     text-decoration: none;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-link:hover,
 .nav-link.active {
     border-bottom: 2px solid var(--primary);
     margin: auto;
-    font-size: var(--fw-medium);
 }
 
 
