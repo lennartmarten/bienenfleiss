@@ -254,6 +254,7 @@ h2.article-headline {
     justify-self: center;
     width: 100%;
     order: 1;
+    padding-left: 1rem;
 }
 
 .col-text-r {
@@ -264,6 +265,7 @@ h2.article-headline {
     justify-self: center;
     width: 100%;
     order: 3;
+    padding-right: 1rem;
 }
 
 .col-img {
@@ -432,6 +434,7 @@ span.side-info {
     align-items: flex-start;
     order: 1;
     white-space: nowrap;
+    font-family: var(--fw-medium);
 }
 
 .footer-link {
