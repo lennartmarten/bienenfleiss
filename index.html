@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
@@ -15,30 +15,22 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cleancode.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/fav-icon.ico">
 
     <meta name="theme-color" content="#fafafa">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
     <!-- Hier beginnt der Content-->
 
 
     <!-- Navigation-->
     <section class="navigation sticky">
-        <div class="nav-controller">
-
+        <div class="nav-controller" id="navbar">
             <div class="nav-header">
                 <a class="nav-link" href="#" title="Home">Home</a>
                 <a class="nav-link" href="#" title="Honig">Honig</a>
@@ -95,18 +87,16 @@
                 <img class="coupon-img" src="./images/coupon_honig.jpg" alt="">
             </div>
             <div class="card-header">
-                <h2 class="card-headline">Gutschein Honig*<br><span class="side-headline">Imkerei Bienenfleiß</span></h2>
+                <h2 class="card-headline">Gutschein<br>Honig*<br><span class="side-headline">Imkerei Bienenfleiß</span></h2>
                 <h4 class="card-subline">Sie erhalten aus unserem Sortiment<br>je zwei 250-g Gläser:</h4>
             </div>
             <div class="card-content">
-                <div class="list-rows">
-                    <ol class="list-right">
-                        <li>Frühtrachthonig (aus Blüten von Raps, Löwenzahn, Apfel und Kirsche)</li>
-                        <li>Ahornhonig</li>
-                        <li>Sommertrachthonig (aus Blüten von Linde und Robinie)</li>
-                        <li>Edelkastanienhonig</li>
-                    </ol>
-                </div>
+                <ol class="list-row">
+                    <li>Frühtrachthonig <span style="font-size: 0.7rem;">(aus Blüten von Raps, Löwenzahn, Apfel und Kirsche)</span></li>
+                    <li>Ahornhonig</li>
+                    <li>Sommertrachthonig <span style="font-size: 0.7rem;">(aus Blüten von Linde und Robinie)</span></li>
+                    <li>Edelkastanienhonig</li>
+                </ol>
             </div>
             <div class="info-sub">
                 <p>*Familiengutschein im Wert von 50€</p>
@@ -153,22 +143,13 @@
             <div class="card-content">
                 <div class="list-rows">
                     <ol class="list-right">
-                        <li>Theoretische Grundlagen</li>
-                        <li>Erste Arbeit mit dem Schwarm</li>
-                        <li>Behandlung von Krankheiten</li>
-                        <li>Futterkontrolle</li>
-                        <li>Bienen im Winter</li>
-                        <li>Auswinterung</li>
-                        <li>Schwarmkontrolle</li>
-                    </ol>
-                    <ol class="list-left">
-                        <li>20. April 2019</li>
-                        <li>08. Mai 2019</li>
-                        <li>10. August 2019</li>
-                        <li>31. August 2019</li>
-                        <li>07. Dezember 2019</li>
-                        <li>14. März 2020</li>
-                        <li>16. Mai 2020</li>
+                        <li>Theoretische Grundlagen <span class="list-item-right">20. April 2019</span></li>
+                        <li>Erste Arbeit mit dem Schwarm <span class="list-item-right">08. Mai 2019</span></li>
+                        <li>Behandlung von Krankheiten <span class="list-item-right">10. August 2019</span></li>
+                        <li>Futterkontrolle <span class="list-item-right">31. August 2019</span></li>
+                        <li>Bienen im Winter <span class="list-item-right">07. Dezember 2019</span></li>
+                        <li>Auswinterung <span class="list-item-right">14. März 2020</span></li>
+                        <li>Schwarmkontrolle <span class="list-item-right">16. Mai 2020</span></li>
                     </ol>
                 </div>
             </div>
@@ -184,7 +165,6 @@
     <!-- Footer -->
 
     <section class="footer">
-
         <ul class="nav-footer">
             <li>
                 <a class="footer-link" href="#">Datenschutz</a>
@@ -206,6 +186,9 @@
             <li>653789 Gorno</li>
         </ul>
     </section>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
