@@ -386,6 +386,7 @@ ol {
     color: var(--info);
     font-family: var(--fw-medium);
     font-size: 0.8;
+    padding: 0 2rem;
 }
 
 span.side-info {
