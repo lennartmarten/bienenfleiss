@@ -442,6 +442,7 @@ span.side-info {
     color: var(--white);
     text-decoration: none;
     border-bottom: 2px solid transparent;
+    padding-bottom: 2rem;
 }
 
 .footer-link:hover,
@@ -497,7 +498,8 @@ span.side-info {
     }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+    /* Hero */
     .logo-img {
         max-width: 100%;
     }
@@ -507,22 +509,51 @@ span.side-info {
     .btn-hero {
         padding: 1rem 4.5rem;
     }
+    /* Atrikel */
     h2.article-headline {
         padding-top: 2rem;
         font-size: 2.5rem;
     }
     .article-container {
         margin-top: 2rem;
+        padding-bottom: 2rem;
     }
     .col-text-l,
     .col-text-r {
-        padding: 0 0;
+        padding: 0;
     }
     .col-img {
         width: 100%;
         padding: 1.5rem 0;
     }
+    /* Cards */
+    .coupon-wrapper {
+        margin: 2rem 0 2rem;
+        padding: 2rem 0;
+    }
     .card {
         width: 80%;
+        margin-top: 2rem;
+    }
+    /* Footer */
+    .footer {
+        padding: 2rem;
+    }
+    .footer-row {
+        flex-direction: column;
+    }
+    .nav-footer,
+    .contact {
+        flex-direction: row;
+    }
+    .footer-link {
+        padding: 0 .5rem;
+    }
+    .contact-item {
+        padding: 0 .5rem;
+    }
+    .footer-logo {
+        max-width: 70%;
+        margin: 2rem;
     }
 }
