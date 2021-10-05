@@ -506,6 +506,6 @@ span.side-info {
 
 @media (min-width: 576px) {
     .footer-row {
-        width 100%;
+        width: 100%;
     }
 }
