@@ -234,7 +234,7 @@ li {
     padding-bottom: 5rem;
     margin-right: auto;
     margin-left: auto;
-    max-width: 100%;
+    max-width: 1440px;
 }
 
 h2.article-headline {
@@ -481,13 +481,6 @@ span.side-info {
 
 /* Media Querys */
 
-@media (max-width: 1320px) {
-    .list-item-right {
-        float: none;
-        white-space: inherit;
-    }
-}
-
 @media (max-width: 991.98px) {
     .coupon-wrapper {
         display: grid;
@@ -505,10 +498,31 @@ span.side-info {
 }
 
 @media (min-width: 576px) {
-    .footer-row {
-        width: 100%;
-    }
     .logo-img {
-        max-width: 70%;
+        max-width: 100%;
+    }
+    .round-img {
+        max-width: 80%;
+    }
+    .btn-hero {
+        padding: 1rem 4.5rem;
+    }
+    h2.article-headline {
+        padding-top: 2rem;
+        font-size: 2.5rem;
+    }
+    .article-container {
+        margin-top: 2rem;
+    }
+    .col-text-l,
+    .col-text-r {
+        padding: 0 0;
+    }
+    .col-img {
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+    .card {
+        width: 80%;
     }
 }
