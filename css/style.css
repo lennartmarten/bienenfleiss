@@ -508,4 +508,7 @@ span.side-info {
     .footer-row {
         width: 100%;
     }
+    .logo-img {
+        max-width: 70%;
+    }
 }
