@@ -234,7 +234,7 @@ li {
     padding-bottom: 5rem;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1440px;
+    max-width: 100%;
 }
 
 h2.article-headline {
@@ -425,7 +425,7 @@ span.side-info {
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 1440px;
+    width: 100%;
     padding: 0 1rem;
 }
 
@@ -501,5 +501,11 @@ span.side-info {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 576px) {
+    .footer-row {
+        width 100%;
     }
 }
