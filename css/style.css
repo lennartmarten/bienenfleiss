@@ -534,6 +534,15 @@ span.side-info {
 
 /* Media Querys */
 
+@media (min-width: 1500px) {
+    .round-img {
+        max-width: 30%;
+    }
+    .logo-img {
+        max-width: 30%;
+    }
+}
+
 @media (max-width: 991.98px) {
     .coupon-wrapper {
         display: grid;
