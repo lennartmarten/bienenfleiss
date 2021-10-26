@@ -93,7 +93,7 @@ h4 {
 .btn-bestellen,
 .btn-hero,
 a {
-    transition-duration: 0.4s;
+    transition: 0.4s;
 }
 
 .btn-bestellen {
@@ -177,7 +177,7 @@ li {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    border: none;
+    border: 2px solid var(--info);
     outline: none;
     background-color: var(--info);
     color: var(--white);
@@ -188,7 +188,10 @@ li {
 }
 
 #myBtn:hover {
-    background-color: var(--dark);
+    border-color: var(--info);
+    background-color: transparent;
+    color: var(--info);
+    transition: 0.4s;
 }
 
 
@@ -347,6 +350,11 @@ a.link-text {
     margin-top: 5rem;
 }
 
+.card:hover {
+    transform: translate(0px, -2rem);
+    transition: all 1s;
+}
+
 .card-img {
     height: auto;
     width: 100%;
@@ -415,9 +423,10 @@ ol {
     justify-content: center;
     margin-top: 1.3rem;
     color: var(--info);
-    font-family: var(--fw-medium);
+    font-family: var(--fw-bold);
     font-size: 0.8;
     padding: 0 2rem;
+    font-size: 0.9rem;
 }
 
 span.side-info {
