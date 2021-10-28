@@ -18,7 +18,7 @@ $(document).ready(function() {
         }
         if (document.body.scrollTop > 94 || document.documentElement.scrollTop > 60) {
             // Dieses Sytling soll die Navigation übernehmen
-            document.getElementById("logo").style.width = "17%";
+            document.getElementById("logo").style.width = "15%";
             // Wenn nicht dann soll der Wert von ?px übernommen werden
         } else {
             document.getElementById("logo").style.width = "20%";
