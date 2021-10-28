@@ -359,7 +359,7 @@ a.link-text {
 }
 
 .card:hover {
-    transform: translate(0px, -2rem);
+    transform: translate(0px, -0.7rem);
 }
 
 .card-img {
