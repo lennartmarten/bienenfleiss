@@ -212,13 +212,19 @@ li {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    margin-bottom: -3rem;
-    z-index: 99;
-    width: 50%;
+    /*margin-bottom: -3rem;*/
+    /* z-index: 99;*/
+    width: 20%;
+    /* Logo beim Scroll 17% */
+    padding-right: 2.5rem;
+}
+
+#logo {
+    transition: 0.4s;
 }
 
 .logo-img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -349,12 +355,11 @@ a.link-text {
     border-radius: 45px;
     width: 80%;
     margin-top: 5rem;
-    transition: all 1s;
+    transition: all 0.4s;
 }
 
 .card:hover {
     transform: translate(0px, -2rem);
-    transition: all 1s;
 }
 
 .card-img {
@@ -559,7 +564,7 @@ p.contact-link {
 
 @media (min-width: 1500px) {
     .round-img {
-        max-width: 30%;
+        max-width: 60%;
     }
     .logo-img {
         max-width: 30%;
