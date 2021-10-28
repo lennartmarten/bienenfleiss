@@ -234,11 +234,11 @@ li {
     justify-content: center;
     align-self: center;
     margin-bottom: 5rem;
-    width: 50%;
+    width: 30%;
 }
 
 .round-img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
